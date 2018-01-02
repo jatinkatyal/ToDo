@@ -18,8 +18,8 @@
 		<td>Accepts new task</td>
 	</tr>
 	<tr>
-		<td>/tasks/<int:id></td>
+		<td>/tasks/id</td>
 		<td>POST</td>
-		<td>Edit existing task with taskId<int:id></td>
+		<td>Edit existing task with taskId id</td>
 	</tr>
 </table>
