@@ -4,9 +4,9 @@ from django.db import models
 class Task(models.Model):
 	taskId = models.AutoField(max_length=10,primary_key=True,serialize=True)
 	taskName = models.CharField(max_length=20)
-	isDone = models.NullBooleanField(default=True)
+	isDone = models.BooleanField(default=True,blank=True)
 	createdAt = models.DateTimeField(null=True)
-	doneAt = models.DateTimeField(null=True)
+	doneAt = models.DateTimeField(null=True,blank=True)
 
 	def __str__(self):
-		return taskId,taskName,isDone,createdAt,doneAt
+		return self.taskName
